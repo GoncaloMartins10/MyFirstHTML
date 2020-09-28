@@ -1,27 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
 <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">   <!-- Socia Medica icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <!-- Socia Medica icon library -->
 <title>Gonçalo Martins | Website</title>
 <style>
 body {
   background-color: #231E1B;
   text-align: center;
+  margin: 10px;
   color: white;
-  font-family: "Lato", sans-serif;
-  font-size: 18px;
+  font: 18px "Lato", sans-serif;
 }
-
-/* Gonçalo Martins título */
-h1 {
+#cover{
+  background-image: url("pics/capa.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: black;
+  font: 20px "Lato", sans-serif;
+  line-height: 5px;
+  color: rgb(191,191,191);
+}
+/*Gonçalo Martins título*/
+#cover h1{
  font-family: "Overpass", sans-serif;
+ color: white;
  font-size: 40px;
 }
+#avatar {
+  vertical-align: middle;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
 /* Topico título */
-h2 {
+h1 {
  font-family: "Exo 2", sans-serif;
  color: #00B0F0;
  font-size: 32px;
@@ -30,15 +46,13 @@ h2 {
 </head>
 <body>
 
-<h1>GONÇALO MARTINS</h1>
-<p>Electrical & Computer Engineer</p>
-<h2>ABOUT ME</h2>
-<h1>Filipa de Vilhena High School</h1>
-<p>This is a paragraph.</p>
+<div id="cover">
+  <img src="https://www.iconfinder.com/data/icons/user-pictures/100/male-512.png" alt="Foto" id="avatar">
+  <h1>Gonçalo Martins</h1>
+  <p>Electrical & Computer Engineering</p>
+</div>
 
-<i class="material-icons">location_on</i> Porto, Portugal <br>
-<i class="material-icons">phone</i> (+351) 914163899 <br>
-<i class="material-icons">email</i> martinsffg@gmail.com<br>
+<h1>ABOUT ME</h1>
 
 </body>
 </html>
