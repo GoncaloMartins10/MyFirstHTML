@@ -2,7 +2,7 @@ body {
   background-color: #231E1B;
   color: white;
   text-align: center;
-  font: 18px "Arial", sans-serif;
+  font: 18px "Lato", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -12,6 +12,7 @@ body {
   align-items: center;
   background-color: black;
   color: white;
+  font: 20px "Lato", sans-serif;
   justify-content: space-between;
 }
 #navbar-links ul{
