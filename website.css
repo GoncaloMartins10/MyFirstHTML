@@ -13,7 +13,7 @@ body {
   background-color: black;
   color: white;
   font: 20px "Lato", sans-serif;
-  justify-content: space-between;
+  justify-content: left;
 }
 #navbar-links ul{
   margin: 0;
@@ -47,7 +47,7 @@ body {
   line-height: 5px;
   color: rgb(191,191,191);
 }
-  /*Gonçalo Martins título*/
+/*Gonçalo Martins título*/
 #cover h1{
  font-family: "Overpass", sans-serif;
  color: white;
@@ -59,6 +59,16 @@ body {
   height: 120px;
   border-radius: 50%;
 }
+.box{
+	margin: 25px 50px;
+	padding: 10px;
+	border: 2px solid blue;
+}
+.box ul {
+    display: inline-block; 
+	text-align: left;
+}
+
 /* Topico título */
 h1 {
  font-family: "Exo 2", sans-serif;
