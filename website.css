@@ -110,13 +110,12 @@ a:hover {
   margin: 25px 50px;
   padding: 10px;
 }
-
 #leftbox{
   float: left;
   padding: 15px;
 }
-
 #rightbox{
   float: right;
+  text-align: left;
   padding: 15px;
 }
