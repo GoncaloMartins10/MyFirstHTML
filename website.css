@@ -65,6 +65,7 @@ body {
 .box{
 	margin: 25px 50px;
   padding: 10px;
+  border: 2px solid red;
 }
 .box ul {
   display: inline-block; 
@@ -130,7 +131,7 @@ tr:nth-child(even) {
 }
 
 /* Progress Bars*/
-.container{
+.bar{
   width: 50%;
   background-color:#D9D9D9;
   margin-left: 25%;
@@ -143,4 +144,26 @@ tr:nth-child(even) {
   color: white;
   border-radius: 5px;
   background-color: #00B0F0;
+}
+
+.TextImgBox{
+  border: 2px solid purple;
+  padding: 10px;
+}
+
+.TextImgBox .image{
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+  border: 2px solid pink;
+  margin: 10px 0;
+}
+.TextImgBox .image img{
+  width: 100px;
+}
+
+.TextImgBox .text{
+  display: inline-block;
+  width: 60%;
+  border: 2px solid green;
 }
