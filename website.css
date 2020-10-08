@@ -64,7 +64,6 @@ body {
 .box{
 	margin: 25px 50px;
   padding: 10px;
-  border: 2px solid red;
 }
 .box ul {
   display: inline-block; 
@@ -100,7 +99,6 @@ table{
 td{
   text-align: center;
   padding: 10px;
-  font-weight: bold;
 }
 tr:nth-child(even) {
   background-color: #262626;
@@ -109,12 +107,10 @@ tr:nth-child(even) {
 /*Container com 2 colunas - Skills*/
 .box-parent {
   display: flex;
-  margin: 0px 50px;
-  border: 2px solid orange;
+  margin: 20px 50px;
 }
 .box-child {
   flex: 1;
-  border: 2px solid pink;
 }  
 .box-child:first-child {
   margin-right: 5px;
@@ -126,9 +122,6 @@ tr:nth-child(even) {
 }
 .box-child li{
   margin-top: 20px;
-}
-.box-child li:first-child {
-  margin-top:0;
 }
 
 /* Barras de Progresso*/
@@ -190,4 +183,22 @@ tr:nth-child(even) {
   font-size: 18px;
   margin-left:40px; 
   margin-top:0; 
+}
+
+.figurebox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 2px solid brown;
+}
+
+.figurebox figure{
+  border: 2px solid blueviolet;
+  padding: 4px;
+  margin: 10px 80px;
+}
+
+.figurebox figcaption{
+  border: 2px solid grey;
+  background-color: black;
 }
