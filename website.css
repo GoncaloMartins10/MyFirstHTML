@@ -189,16 +189,25 @@ tr:nth-child(even) {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  border: 2px solid brown;
 }
 
 .figurebox figure{
-  border: 2px solid blueviolet;
   padding: 4px;
   margin: 10px 80px;
 }
 
 .figurebox figcaption{
-  border: 2px solid grey;
   background-color: black;
+}
+
+footer{
+  background-color: black;
+  margin: 0;
+  display: flex;
+  
+}
+
+footer .box{
+  flex:1;
+  border: 2px solid white;
 }
