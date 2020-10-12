@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="website.css">
 <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
@@ -12,67 +11,70 @@
 <title>Gonçalo Martins | Skills</title>
 </head>
 <body>
-<nav id="navbar">
-  <div id="navbar-links">
-  <ul>
-    <li><a href="aboutme.html">ABOUT ME</a></li>
-    <li><a href="education.html">EDUCATION</a></li>
-    <li><a class="current" href="#">SKILLS</a></li>
-    <li><a href="languages.html">LANGUAGES</a></li>
-    <li><a href="projects.html">PROJECTS</a></li>
-    <li><a href="hobbies.html">HOBBIES</a></li>
-    <li><a href="#">DOWNLOADS</a></li>
-    <li><a href="#">CONTACT</a></li>
-  </ul>
+
+  <div class="nav">
+    <ul>
+      <li><a href="aboutme.html">ABOUT ME</a></li>
+      <li><a href="education.html">EDUCATION</a></li>
+      <li><a class="active" href="#">SKILLS</a></li>
+      <li><a href="languages.html">LANGUAGES</a></li>
+      <li><a href="projects.html">PROJECTS</a></li>
+      <li><a href="hobbies.html">HOBBIES</a></li>
+      <li><a href="downloads.html">DOWNLOADS</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
   </div>
-</nav>
 
+  <main>
 
-<div class="box">
     <h1>SKILLS</h1>
-    <div class="box-parent">    
-        <div class="box-child">
-          <h2>Technological</h2>
-          <p>C/C++</p>
-          <div class="bar">
-            <div class="skills" style="width:90%;"></div>
-          </div>
-  
-          <p>HTML</p>
-          <div class="bar">
-              <div class="skills" style="width:80%;"></div>
-          </div>
-  
-          <p>CSS</p>
-          <div class="bar">
-            <div class="skills" style="width:60%;"></div>
-          </div>
-  
-          <p>SQL</p>
-          <div class="bar">
-            <div class="skills" style="width:55%;"></div>
-          </div>
 
-          <p>MATLAB</p>
-          <div class="bar">
-            <div class="skills" style="width:75%;"></div>
-          </div>
+    <div class="float-container">
 
-          <p>Python</p>
-          <div class="bar">
-            <div class="skills" style="width:30%;"></div>
-          </div>
+        <div class="flex-container">
 
-          <p>PLC</p>
-          <div class="bar">
-            <div class="skills" style="width:65%;"></div>
-          </div>
+            <div class="flex-child tech">
+              <h2>Technological</h2>
 
-        </div>
-        
-        <div class="box-child">
-            <h2>Soft Skills</h2>
-            <ul>
+              <p>C/C++</p>
+              <div class="bar">
+                <div class="skills" style="width:90%;"></div>
+              </div>
+      
+              <p>HTML</p>
+              <div class="bar">
+                  <div class="skills" style="width:80%;"></div>
+              </div>
+      
+              <p>CSS</p>
+              <div class="bar">
+                <div class="skills" style="width:60%;"></div>
+              </div>
+      
+              <p>SQL</p>
+              <div class="bar">
+                <div class="skills" style="width:55%;"></div>
+              </div>
+    
+              <p>MATLAB</p>
+              <div class="bar">
+                <div class="skills" style="width:75%;"></div>
+              </div>
+    
+              <p>Python</p>
+              <div class="bar">
+                <div class="skills" style="width:30%;"></div>
+              </div>
+    
+              <p>PLC</p>
+              <div class="bar">
+                <div class="skills" style="width:65%;"></div>
+              </div>
+            </div>
+            
+            <div class="flex-child soft">
+              <h2>Soft Skills</h2>
+              <ul>
                 <li>Teamwork</li>
                 <li>Wilingness to learn</li>
                 <li>Problem Solving</li>
@@ -80,10 +82,26 @@
                 <li>Wilingness to learn</li>
                 <li>Problem Solving</li>
               </ul>
-        </div>
-      </div>
-</div>
+            </div>
 
+        </div>
+
+  </main>
+
+
+  <footer>
+    <div class="box">
+      <span class="material-icons">location_on</span> Porto, Portugal <br>
+      <span class="material-icons">email</span> martinsffg@gmail.com <br>
+      <span class="material-icons">phone</span> (+351) 914163899 <br>
+    </div>
+    <div class="box">
+      <a href="https://github.com/GoncaloMartins10" class="fa fa-github"></a>
+      <a href="https://pt.linkedin.com/in/goncalomartins98" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-instagram"></a>
+    </div>
+  </footer>
 
 </body>
 </html>
