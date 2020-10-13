@@ -39,7 +39,7 @@ body{
 }
 
 .nav ul li a:hover:not(.active){
-  background-color: grey;
+  background-color: rgb(100, 100, 100);
 }
 
 .nav ul li a.active {
@@ -89,7 +89,6 @@ footer a:hover {
 
 /* ----- Main box ----*/
 main{
-  border: 2px solid red;
   margin: 25px 50px;
   padding: 10px;
   text-align: center;
@@ -262,9 +261,51 @@ tr:nth-child(even) {
   .card .text p.descricao{
     margin-left:0px; 
   }
+  .card .image{
+    width: 100%;
+  }
 }
 
 /* -- Figuras 2x2 ---*/
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.single-img{
+  margin: 30px 101px;
+  position: relative;
+}
+.single-img img{
+  border-radius: 30px;
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.7s ease;
+  opacity:1;
+}
+.overlay{
+  position: absolute;
+  padding: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.7s ease;
+  opacity:0;
+  background-color:rgba(0,0,0,0.5);
+}
+.single-img:hover .overlay {
+  opacity: 1;
+}
+.single-img:hover img {
+  opacity: 0.2;
+  border: 2px solid #00B0F0;
+}
+
+
 
 
 
