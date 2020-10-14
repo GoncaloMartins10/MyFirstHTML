@@ -59,6 +59,11 @@ footer{
   right: 0;
   bottom: 0;
   left: 0;
+  text-align: center;
+}
+
+footer .container{
+  text-align: center;
   display: flex;
   justify-content: space-around;
 }
@@ -77,6 +82,12 @@ footer .fa {
   text-decoration: none;
   margin: 5px 2px;
 }
+footer p{
+  width: 100%;
+  margin-bottom: 0;
+  padding: 10px;
+  background-color: rgb(7, 7, 7);
+}
 footer a:link {
   color: white;
 }
@@ -93,7 +104,7 @@ main{
   padding: 10px;
   text-align: center;
 }
-main h1{
+h1{
   font: 32px "Exo 2", sans-serif;
   color: #00B0F0;
 }
@@ -159,6 +170,7 @@ tr:nth-child(even) {
 
 /* ----- Colunas lado a lado (SKILLS) ----- */ 
 .flex-container {
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -277,6 +289,12 @@ tr:nth-child(even) {
 .single-img{
   margin: 30px 101px;
   position: relative;
+}
+.single-img .button{
+  border: 2px solid pink;
+  background-color: rgb(100, 100, 100);
+  width:200px;
+  height: 200px;
 }
 .single-img img{
   border-radius: 30px;
