@@ -1,91 +1,122 @@
-html{
-  height: 100%;
-  margin : 0;
+*{
+  box-sizing: border-box;
 }
 
-body {
+html{
+  height: 100%;
+}
+
+body{
   background-color: #231E1B;
   color: white;
-  text-align: center;
   font: 18px "Lato", sans-serif;
   margin: 0;
   padding: 0;
-
   min-height: 100%;
   display: flex;
   flex-direction: column;
 }
 
-/* Barra de Navegação*/
-#navbar{
-  display: flex;
-  align-items: center;
-  background-color: black;
-  color: white;
-  font: 20px "Lato", sans-serif;
-  justify-content: space-around;
-}
-#navbar-links ul{
+/* ----- Barra de Navegação ----- */
+.nav ul{
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex;
+  overflow: hidden;
+  background-color: black;
 }
-#navbar-links li{
-  list-style: none;
+
+.nav ul li{
+  float: left;
 }
-#navbar-links li a{
-  text-decoration: none;
+
+.nav ul li a{
   display: block;
   color: white;
+  text-align: center;
   padding: 10px;
+  text-decoration: none;
 }
-#navbar-links a:hover{
-  background-color: grey;
+
+.nav ul li a:hover:not(.active){
+  background-color: rgb(100, 100, 100);
 }
-#navbar-links .current{
+
+.nav ul li a.active {
   background-color: #00B0F0;
 }
+/* Parte Responsiva*/
+/*@media screen and (max-width: 950px) {
+  nav ul li {
+    float: none;
+  }
+}*/
 
-/* Capa do website*/
-#cover{
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-image: url("pics/capa.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  font: 20px "Lato", sans-serif;
-  line-height: 5px;
-  color: rgb(191,191,191);
-}
-#cover h1{
- font-family: "Overpass", sans-serif;
- color: white;
- font-size: 40px;
-}
-#avatar {
-  vertical-align: middle;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
+/* ----- Rodapé ------ */
+footer{
+  background-color: black;
+  margin-top: auto;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
 }
 
-/* Conteudo */
-.box{
-	margin: 25px 50px;
+footer .container{
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .box{
+  text-align: left;
+  margin: 20px;
   padding: 10px;
 }
-.box ul {
-  display: inline-block; 
-	text-align: left;
+
+footer .fa {
+  padding: 10px;
+  font-size: 25px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
 }
-/* Topico título */
-.box h1 {
- font-family: "Exo 2", sans-serif;
- color: #00B0F0;
- font-size: 32px;
- margin-bottom: 30px;
+footer p{
+  width: 100%;
+  margin-bottom: 0;
+  padding: 10px;
+  background-color: rgb(7, 7, 7);
 }
-/* Hyperlinks*/
+footer a:link {
+  color: white;
+}
+footer a:visited {
+  color: white;
+}
+footer a:hover {
+  color:#00B0F0;
+}
+
+/* ----- Main box ----*/
+main{
+  margin: 25px 50px;
+  padding: 10px;
+  text-align: center;
+}
+h1{
+  font: 32px "Exo 2", sans-serif;
+  color: #00B0F0;
+}
+
+/* ----- Caixa com texto ----- */
+.textbox{
+  margin: 70px auto;
+  width: 60%;
+  text-align: left;
+}
+
+/* ----- Hyperlinks ----- */
 a:link {
   text-decoration: none;
   color: #90E0EF;
@@ -96,7 +127,8 @@ a:visited {
 a:hover {
   color:#00B0F0;
 }
-/* Tabelas */
+
+/* ----- Tabelas ----- */
 table{
   border: 2px solid #00B0F0;
   border-collapse: collapse;
@@ -113,24 +145,62 @@ tr:nth-child(even) {
   background-color: #262626;
 }
 
-/*Container com 2 colunas - Skills*/
-.box-parent {
-  display: flex;
-  margin: 20px 50px;
+/* -------Capa do website ------*/
+#cover{
+  background-image: url("pics/capa.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 20px;
+  font-size: 20px;
+  line-height: 5px;
+  color: rgb(191,191,191);
+  text-align: center;
 }
-.box-child {
+#cover h1{
+ font-family: "Overpass", sans-serif;
+ color: white;
+ font-size: 40px;
+}
+#avatar {
+  vertical-align: middle;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+/* ----- Colunas lado a lado (SKILLS) ----- */ 
+.flex-container {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.flex-child {
   flex: 1;
+  margin: 20px 20px;
 }  
-.box-child:first-child {
-  margin-right: 5px;
+
+@media (max-width: 800px) {
+  .flex-child {
+    flex: 100%;
+  }
+}
+
+/* Coluna de Soft Skills */
+.soft ul{
+  display: inline-block;
+  text-align: left;
 } 
-.box-child:first-child p{
+.soft li{
+  margin-top: 20px;
+}
+
+/* Coluna de Technological Skills */
+.tech p{
   text-align: left;
   margin-bottom: 1px;
   margin-left: 25%
-}
-.box-child li{
-  margin-top: 20px;
 }
 
 /* Barras de Progresso*/
@@ -142,101 +212,121 @@ tr:nth-child(even) {
 }
 .skills{
   text-align: right;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 5px 0;
   color: white;
   border-radius: 5px;
   background-color: #00B0F0;
 }
 
-/* Imagem esquerda e Texto na direita - Education & Hobbies*/
-.TextImgBox{
-  padding: 10px;
-  margin: 10px 150px 30px;
+
+/* ----- Carta (Foto esquerda, texto direita) ----- */
+.card{
+  margin: 70px auto;
+  width: 50%;
 }
-.TextImgBox .image{
+
+.card .image{
+  margin-right: 5px;
   display: inline-block;
   vertical-align: top;
-  width: 20%;
+  width: 25%;
 }
-.TextImgBox .image img{
+.card .image img{
   width: 100px;
-  height: 100px;
-}
-.TextImgBox .text{
-  display: inline-block;
-  width: 50%;
-  text-align: left;
-}
-.TextImgBox .text h3{
-  font-family: "Overpass", sans-serif;
-  color: white;
-  font-size: 24px;
-  margin-top:0; 
-  margin-bottom:0;
-}
-.TextImgBox .text p{
-  margin-bottom:0; 
-  margin-top:0; 
-}
-.TextImgBox .text p.data{
-  font: 16px "Lato", sans-serif;
-  color: #BFBFBF;
-  font-size: 16px;
-  margin-bottom:0; 
-  margin-top:0; 
-}
-.TextImgBox .text p.descricao{
-  font: 16px "Lato", sans-serif;
-  color: #D9D9D9;
-  font-size: 18px;
-  margin-left:40px; 
-  margin-top:0; 
+  height: 100px; 
 }
 
-.figurebox{
+.card .text{
+  display: inline-block;
+  vertical-align: top;
+  width: 65%;
+  text-align: left;
+}
+.card .text p{
+  margin: 0 auto;
+}
+.card .text p.data{
+  font-size: 16px;
+  color: #BFBFBF;
+}
+.card .text p.descricao{
+  font-size: 16px;
+  color: #D9D9D9;
+  margin-left:40px; 
+}
+.card .text h2{
+  font: 24px "Overpass", sans-serif;
+  margin: 0 auto;
+}
+@media (max-width: 900px) {
+  .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .card .text{
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .card .text p.descricao{
+    margin-left:0px; 
+  }
+  .card .image{
+    width: 100%;
+  }
+}
+
+/* -- Figuras 2x2 ---*/
+.gallery{
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
 }
-
-.figurebox figure{
-  padding: 4px;
-  margin: 10px 80px;
+.single-img{
+  margin: 30px 101px;
+  position: relative;
+}
+.single-img .button{
+  border: 2px solid pink;
+  background-color: rgb(100, 100, 100);
+  width:200px;
+  height: 200px;
+}
+.single-img img{
+  border-radius: 30px;
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.7s ease;
+  opacity:1;
+}
+.overlay{
+  position: absolute;
+  padding: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.7s ease;
+  opacity:0;
+  background-color:rgba(0,0,0,0.5);
+}
+.single-img:hover .overlay {
+  opacity: 1;
+}
+.single-img:hover img {
+  opacity: 0.2;
+  border: 2px solid #00B0F0;
 }
 
-.figurebox figcaption{
-  background-color: black;
-}
 
-footer{
-  background-color: black;
-  margin-top: auto;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  justify-content: space-around;
-}
-footer .box{
-  text-align: left;
-}
 
-footer .fa {
-  padding: 10px;
-  font-size: 25px;
-  width: 25px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-}
 
-p.copyright {
-  border: 1px solid blueviolet;
-  width: 100%;
-  text-align: center;
-  bottom:0;
-}
+
 
 
 
