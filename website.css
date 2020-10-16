@@ -163,9 +163,10 @@ tr:nth-child(even) {
 }
 #avatar {
   vertical-align: middle;
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 /* ----- Colunas lado a lado (SKILLS) ----- */ 
@@ -290,12 +291,6 @@ tr:nth-child(even) {
   margin: 30px 101px;
   position: relative;
 }
-.single-img .button{
-  border: 2px solid pink;
-  background-color: rgb(100, 100, 100);
-  width:200px;
-  height: 200px;
-}
 .single-img img{
   border-radius: 30px;
   width: 400px;
@@ -323,6 +318,23 @@ tr:nth-child(even) {
   border: 2px solid #00B0F0;
 }
 
+.iconbox{
+  margin: 30px 101px;
+  padding: 30px;
+  background-color: rgb(100, 100, 100);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 200px;
+  width: 200px;
+  border-radius: 30px;
+  position: relative;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.iconbox img{
+  height: 100px;
+  width: 80px;
+}
 
 
 
