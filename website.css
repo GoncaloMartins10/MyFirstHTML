@@ -45,12 +45,6 @@ body{
 .nav ul li a.active {
   background-color: #00B0F0;
 }
-/* Parte Responsiva*/
-/*@media screen and (max-width: 950px) {
-  nav ul li {
-    float: none;
-  }
-}*/
 
 /* ----- Rodapé ------ */
 footer{
@@ -109,8 +103,14 @@ h1{
   color: #00B0F0;
 }
 
+h2{
+  font: 24px "Overpass", sans-serif;
+  margin: 0 auto;
+}
+
 /* ----- Caixa com texto ----- */
 .textbox{
+  border: 2px solid red;
   margin: 70px auto;
   width: 60%;
   text-align: left;
@@ -171,6 +171,7 @@ tr:nth-child(even) {
 
 /* ----- Colunas lado a lado (SKILLS) ----- */ 
 .flex-container {
+  border: 2px solid blue;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -178,6 +179,7 @@ tr:nth-child(even) {
 }
 
 .flex-child {
+  border: 2px solid yellow;
   flex: 1;
   margin: 20px 20px;
 }  
@@ -254,10 +256,6 @@ tr:nth-child(even) {
   font-size: 16px;
   color: #D9D9D9;
   margin-left:40px; 
-}
-.card .text h2{
-  font: 24px "Overpass", sans-serif;
-  margin: 0 auto;
 }
 @media (max-width: 900px) {
   .card{
@@ -345,11 +343,9 @@ tr:nth-child(even) {
   display: flex;
   justify-content: center;
 }
-
 label{
   float: left;
 }
-
 input[type=text], select, textarea {
   background-color: rgb(15,15,15);
   color: white;
@@ -376,6 +372,37 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: gray;
 }
+
+.button{
+  background-color: #00B0F0;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 12px 20px;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  float: left;
+  border-radius: 10px;
+}
+.button a{
+  color: white;
+}
+
+.project-image {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.project-label{
+  text-align: left;
+}
+
+
+
 
 
 
