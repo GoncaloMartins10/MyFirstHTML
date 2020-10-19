@@ -110,7 +110,6 @@ h2{
 
 /* ----- Caixa com texto ----- */
 .textbox{
-  border: 2px solid red;
   margin: 70px auto;
   width: 60%;
   text-align: left;
@@ -171,7 +170,6 @@ tr:nth-child(even) {
 
 /* ----- Colunas lado a lado (SKILLS) ----- */ 
 .flex-container {
-  border: 2px solid blue;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -179,9 +177,8 @@ tr:nth-child(even) {
 }
 
 .flex-child {
-  border: 2px solid yellow;
   flex: 1;
-  margin: 20px 20px;
+  margin: 20px;
 }  
 
 @media (max-width: 800px) {
@@ -370,7 +367,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: gray;
+  background-color: rgb(100, 100, 100);
 }
 
 .button{
@@ -391,13 +388,32 @@ input[type=submit]:hover {
   color: white;
 }
 
+.button:hover{
+  background-color:rgb(100, 100, 100);
+}
+
+.project{
+  border: 2px solid #00B0F0;
+  border-radius: 20px;
+  background-color: black;
+  width: 70%;
+  margin: 20px auto; 
+}
+
 .project-image {
   width: 400px;
   height: 250px;
   object-fit: cover;
+  border-radius: 20px;
 }
 
 .project-label{
+  text-align: left;
+  margin: 10px 20px;
+}
+
+.project-discription{
+  margin: 10px 20px;
   text-align: left;
 }
 
