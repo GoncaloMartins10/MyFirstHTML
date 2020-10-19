@@ -211,9 +211,7 @@ tr:nth-child(even) {
   border-radius: 5px;
 }
 .skills{
-  text-align: right;
-  padding: 5px 0;
-  color: white;
+  padding: 5px;
   border-radius: 5px;
   background-color: #00B0F0;
 }
@@ -295,7 +293,7 @@ tr:nth-child(even) {
   transition: 0.7s ease;
   opacity:1;
 }
-.overlay{
+.overlay{ 
   position: absolute;
   padding: 30px;
   top: 50%;
@@ -330,7 +328,10 @@ tr:nth-child(even) {
   height: 100px;
   width: 80px;
 }
-
+.iconbox img:hover{
+  position: relative;
+  top: -5px;
+}
 /* ----- Contact Form ----- */
 
 .contact-container{
@@ -348,7 +349,7 @@ input[type=text], select, textarea {
   color: white;
   width: 100%;
   padding: 12px;
-  border: 1px solid gray;
+  border: 2px solid gray;
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
@@ -372,7 +373,6 @@ input[type=submit]:hover {
 
 .button{
   background-color: #00B0F0;
-  color: white;
   text-align: center;
   text-decoration: none;
   margin-top: 20px;
@@ -387,7 +387,6 @@ input[type=submit]:hover {
 .button a{
   color: white;
 }
-
 .button:hover{
   background-color:rgb(100, 100, 100);
 }
@@ -411,12 +410,6 @@ input[type=submit]:hover {
   text-align: left;
   margin: 10px 20px;
   line-height: 0.8cm;
-}
-
-.project-discription{
-  line-height: 1cm;
-  margin: 10px 20px;
-  text-align: left;
 }
 
 iframe {
