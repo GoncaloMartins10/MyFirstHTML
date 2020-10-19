@@ -410,11 +410,22 @@ input[type=submit]:hover {
 .project-label{
   text-align: left;
   margin: 10px 20px;
+  line-height: 0.8cm;
 }
 
 .project-discription{
+  line-height: 1cm;
   margin: 10px 20px;
   text-align: left;
+}
+
+iframe {
+  border: 1px solid rgb(100,100,100);
+  width: 400px;
+  height: 300px;
+  max-width: 100%;
+  display: block;
+  margin: 20px auto;
 }
 
 
