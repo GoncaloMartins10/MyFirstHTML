@@ -206,7 +206,7 @@ tr:nth-child(even) {
 /* Barras de Progresso*/
 .bar{
   width: 50%;
-  background-color:#D9D9D9;
+  background-color:#646464;
   margin-left: 25%;
   border-radius: 5px;
 }
