@@ -5,7 +5,7 @@
 html{
   height: 100%;
 }
-
+/* ---------- Caracteristicas Principais ----------*/
 body{
   background-color: #231E1B;
   color: white;
@@ -16,20 +16,17 @@ body{
   display: flex;
   flex-direction: column;
 }
-
-/* ----- Barra de Navegação ----- */
+/* ------------- Navbar ------------- */
 .nav ul{
-  list-style-type: none;
+  background-color: black;
   margin: 0;
   padding: 0;
+  list-style-type: none;
   overflow: hidden;
-  background-color: black;
 }
-
 .nav ul li{
   float: left;
 }
-
 .nav ul li a{
   display: block;
   color: white;
@@ -37,16 +34,14 @@ body{
   padding: 10px;
   text-decoration: none;
 }
-
 .nav ul li a:hover:not(.active){
   background-color: rgb(100, 100, 100);
 }
-
 .nav ul li a.active {
   background-color: #00B0F0;
 }
 
-/* ----- Rodapé ------ */
+/* ------------- Footer ------------- */
 footer{
   background-color: black;
   margin-top: auto;
@@ -55,19 +50,18 @@ footer{
   left: 0;
   text-align: center;
 }
-
+/* Footer flex box */
 footer .container{
   text-align: center;
   display: flex;
   justify-content: space-around;
 }
-
 footer .box{
-  text-align: left;
   margin: 20px;
   padding: 10px;
+  text-align: left;
 }
-
+/* Footer icon */
 footer .fa {
   padding: 10px;
   font-size: 25px;
@@ -75,12 +69,6 @@ footer .fa {
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
-}
-footer p{
-  width: 100%;
-  margin-bottom: 0;
-  padding: 10px;
-  background-color: rgb(7, 7, 7);
 }
 footer a:link {
   color: white;
@@ -91,13 +79,21 @@ footer a:visited {
 footer a:hover {
   color:#00B0F0;
 }
+/* Copyright */
+footer p{
+  width: 100%;
+  margin-bottom: 0;
+  padding: 10px;
+  background-color: rgb(7, 7, 7);
+}
 
-/* ----- Main box ----*/
+/* ------------- Main box ------------- */
 main{
   margin: 25px 50px;
   padding: 10px;
   text-align: center;
 }
+/* ------------- Fontes ------------- */
 h1{
   font: 32px "Exo 2", sans-serif;
   color: #00B0F0;
@@ -108,14 +104,14 @@ h2{
   margin: 0 auto;
 }
 
-/* ----- Caixa com texto ----- */
+/* ---------- Caixa com texto ---------- */
 .textbox{
   margin: 70px auto;
   width: 60%;
   text-align: left;
 }
 
-/* ----- Hyperlinks ----- */
+/* ---------- Hyperlinks ---------- */
 a:link {
   text-decoration: none;
   color: #90E0EF;
@@ -127,14 +123,14 @@ a:hover {
   color:#00B0F0;
 }
 
-/* ----- Tabelas ----- */
+/* ---------- Tabelas ---------- */
 table{
+  background-color: #0D0D0D;
   border: 2px solid #00B0F0;
-  border-collapse: collapse;
-  table-layout: auto;
   width: 40%;  
   margin: 50px auto;
-  background-color: #0D0D0D;
+  border-collapse: collapse;
+  table-layout: auto;
 }
 td{
   text-align: center;
@@ -144,31 +140,33 @@ tr:nth-child(even) {
   background-color: #262626;
 }
 
-/* -------Capa do website ------*/
+/* ---------- Capa do website [ABOUT ME] ----------- */
 #cover{
   background-image: url("pics/capa.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  color: rgb(191,191,191);
   padding: 50px 20px;
   font-size: 20px;
   line-height: 5px;
-  color: rgb(191,191,191);
   text-align: center;
 }
+/* Gonçalo Martins */
 #cover h1{
  font-family: "Overpass", sans-serif;
  color: white;
  font-size: 40px;
 }
+/* Foto */
 #avatar {
-  vertical-align: middle;
   width: 150px;
   height: 150px;
   border-radius: 50%;
+  vertical-align: middle;
   object-fit: cover;
 }
 
-/* ----- Colunas lado a lado (SKILLS) ----- */ 
+/* ------- Flexboxes [SKILLS e PROJECT] ------- */ 
 .flex-container {
   margin: 0 auto;
   display: flex;
@@ -196,7 +194,7 @@ tr:nth-child(even) {
   margin-top: 20px;
 }
 
-/* Coluna de Technological Skills */
+/* --- Coluna de Technological Skills --- */
 .tech p{
   text-align: left;
   margin-bottom: 1px;
@@ -211,18 +209,24 @@ tr:nth-child(even) {
   border-radius: 5px;
 }
 .skills{
-  padding: 5px;
+  padding: 6px;
   border-radius: 5px;
   background-color: #00B0F0;
 }
 
 
-/* ----- Carta (Foto esquerda, texto direita) ----- */
+/* ----- Carta (Foto esquerda, texto direita) [HOBBIES e EDUCATION] ----- */
 .card{
   margin: 70px auto;
   width: 50%;
+  padding: 15px;
 }
-
+.card:hover{
+  background-color: black;
+  border: 2px solid #00B0F0;
+  border-radius: 20px;
+}
+/* Imagem */
 .card .image{
   margin-right: 5px;
   display: inline-block;
@@ -233,7 +237,7 @@ tr:nth-child(even) {
   width: 100px;
   height: 100px; 
 }
-
+/* Texto*/
 .card .text{
   display: inline-block;
   vertical-align: top;
@@ -252,6 +256,7 @@ tr:nth-child(even) {
   color: #D9D9D9;
   margin-left:40px; 
 }
+/*Responsividade*/
 @media (max-width: 900px) {
   .card{
     display: flex;
@@ -272,7 +277,7 @@ tr:nth-child(even) {
   }
 }
 
-/* -- Figuras 2x2 ---*/
+/* ------- Galeria de fotos [PROJECTS] ------- */
 .gallery{
   display: flex;
   flex-wrap: wrap;
@@ -293,6 +298,7 @@ tr:nth-child(even) {
   transition: 0.7s ease;
   opacity:1;
 }
+/*Legenda no hover*/
 .overlay{ 
   position: absolute;
   padding: 30px;
@@ -311,6 +317,7 @@ tr:nth-child(even) {
   border: 2px solid #00B0F0;
 }
 
+/* ----- Caixa de icons [DOWNLOADS] ----- */
 .iconbox{
   margin: 30px 50px;
   padding: 30px;
@@ -332,8 +339,8 @@ tr:nth-child(even) {
   position: relative;
   top: -5px;
 }
-/* ----- Contact Form ----- */
 
+/* ----- Formulario de contacto [CONTACT] ----- */
 .contact-container{
   margin: 30px auto;
   padding: 20px;
@@ -341,9 +348,11 @@ tr:nth-child(even) {
   display: flex;
   justify-content: center;
 }
+/* Descricao*/
 label{
   float: left;
 }
+/* Caixa de dados */
 input[type=text], select, textarea {
   background-color: rgb(15,15,15);
   color: white;
@@ -356,21 +365,23 @@ input[type=text], select, textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
-
+/* Botao de submeter*/
 input[type=submit] {
-  float: left;
   background-color: #00B0F0;
   color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
+  float: left;
   cursor: pointer;
 }
-
 input[type=submit]:hover {
   background-color: rgb(100, 100, 100);
 }
 
+/* ----- Descricao dos projectos [PROJECT 1,2,3,4] ----- */
+
+/* Botao de regresso */
 .button{
   background-color: #00B0F0;
   text-align: center;
@@ -391,34 +402,35 @@ input[type=submit]:hover {
   background-color:rgb(100, 100, 100);
 }
 
+/* Caixa do projeto */
 .project{
   border: 2px solid #00B0F0;
-  border-radius: 20px;
   background-color: black;
+  border-radius: 20px;
   width: 70%;
   margin: 20px auto; 
 }
-
+/* Imagem */
 .project-image {
   width: 400px;
   height: 250px;
   object-fit: cover;
   border-radius: 20px;
 }
-
+/* Descrição */
 .project-label{
   text-align: left;
   margin: 10px 20px;
   line-height: 0.8cm;
 }
-
+/* Video */
 iframe {
   border: 1px solid rgb(100,100,100);
   width: 400px;
   height: 300px;
   max-width: 100%;
-  display: block;
   margin: 20px auto;
+  display: block;
 }
 
 
