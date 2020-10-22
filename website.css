@@ -78,6 +78,8 @@ footer a:visited {
 }
 footer a:hover {
   color:#00B0F0;
+  position: relative;
+  top: -5px;
 }
 /* Copyright */
 footer p{
