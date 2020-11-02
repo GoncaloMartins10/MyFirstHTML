@@ -2,7 +2,7 @@
 
 ## Discription
 
-The purpose of this project was get in touch with HTML and CSS programming for the first time. Therefore I choosed to create my personal webpage and develop my skills in area of Web Design.
+The purpose of this project was get in touch with HTML and CSS programming for the first time. Therefore I choosed to create my personal webpage and develop my skills in the field of Web Design.
 
 ## Result
 
